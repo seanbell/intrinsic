@@ -1,20 +1,8 @@
-
-        ____      __       _            _         ____
-       /  _/___  / /______(_)___  _____(_)____   /  _/___ ___  ____ _____ ____  _____
-       / // __ \/ __/ ___/ / __ \/ ___/ / ___/   / // __ `__ \/ __ `/ __ `/ _ \/ ___/
-     _/ // / / / /_/ /  / / / / (__  ) / /__   _/ // / / / / / /_/ / /_/ /  __(__  )
-    /___/_/ /_/\__/_/  /_/_/ /_/____/_/\___/  /___/_/ /_/ /_/\__,_/\__, /\___/____/
-                                                                  /____/
-
-                    _          __  __            _       ___ __    __
-                   (_)___     / /_/ /_  ___     | |     / (_) /___/ /
-                  / / __ \   / __/ __ \/ _ \    | | /| / / / / __  /
-                 / / / / /  / /_/ / / /  __/    | |/ |/ / / / /_/ /
-                /_/_/ /_/   \__/_/ /_/\___/     |__/|__/_/_/\__,_/
-
+Intrinsic Images in the Wild
+============================
 
 Citation
-========
+--------
 
 If you find this code useful, please cite:
 
@@ -24,7 +12,7 @@ http://intrinsic.cs.cornell.edu.'
 
 
 Dependencies
-============
+------------
 
 - Eigen (http://eigen.tuxfamily.org/)
   On Ubuntu, you can install with: `sudo apt-get install libeigen3-dev`
@@ -43,7 +31,7 @@ Dependencies
 
 
 Compile
-=======
+-------
 
 If on Ubuntu and you have installed Eigen3 to its default directory (/usr/include/eigen3),
 then you can build the C++ extension with:
@@ -55,7 +43,7 @@ If Eigen3 is in another directory, edit krahenbuhl2013/setup.py to change the di
 
 
 Running
-=======
+-------
 
 	usage: decompose.py [-h] [-r <file>] [-s <file>] [-m <file>] [-j <file>]
 						[-p <file>] [-l] [-q] [--show-labels]
@@ -90,7 +78,7 @@ Running
 
 
 Embedding in other projects
-===========================
+---------------------------
 
 Our code was written to be modular and can be embedded in larger projects.
 The basic code for constructing the input and parameters can be found in
