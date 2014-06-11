@@ -31,8 +31,8 @@ Dependencies
 
 - Python 2.7
 
-- Python packages (newer: packages will likely work, though these are the exact
-  versions that I used).
+- Python packages (newer packages will likely work, though these are the exact
+  versions that I used):
 
       PIL==1.1.7
       cython==0.19.2
