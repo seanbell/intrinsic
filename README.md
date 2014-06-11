@@ -9,7 +9,7 @@ This repository contains the decomposition algorithm presented in the paper:
 
 If you find our code useful, please cite our paper.
 
-The dataset can is hosted at http://intrinsic.cs.cornell.edu/
+The dataset is hosted at http://intrinsic.cs.cornell.edu/.
 
 
 Dependencies
