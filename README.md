@@ -13,7 +13,7 @@
                 /_/_/ /_/   \__/_/ /_/\___/     |__/|__/_/_/\__,_/
 
 
-CITATION
+Citation
 ========
 
 If you find this code useful, please cite:
@@ -23,7 +23,7 @@ ACM Transactions on Graphics (SIGGRAPH 2014).
 http://intrinsic.cs.cornell.edu.'
 
 
-DEPENDENCIES
+Dependencies
 ============
 
 - Eigen (http://eigen.tuxfamily.org/)
@@ -42,7 +42,7 @@ DEPENDENCIES
 	scikit-learn==0.14.1
 
 
-COMPILE
+Compile
 =======
 
 If on Ubuntu and you have installed Eigen3 to its default directory (/usr/include/eigen3),
@@ -54,7 +54,7 @@ then you can build the C++ extension with:
 If Eigen3 is in another directory, edit krahenbuhl2013/setup.py to change the directory.
 
 
-RUNNING
+Running
 =======
 
 	usage: decompose.py [-h] [-r <file>] [-s <file>] [-m <file>] [-j <file>]
@@ -89,7 +89,7 @@ RUNNING
 	--show-labels         if specified, also output labels
 
 
-EMBEDDING IN OTHER PROJECTS
+Embedding in other projects
 ===========================
 
 Our code was written to be modular and can be embedded in larger projects.
