@@ -1,9 +1,6 @@
 Intrinsic Images in the Wild
 ============================
 
-Citation
---------
-
 If you find this code useful, please cite:
 
 Sean Bell, Kavita Bala, Noah Snavely. "Intrinsic Images in the Wild".
