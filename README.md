@@ -15,6 +15,8 @@ The dataset is hosted at http://intrinsic.cs.cornell.edu/.
 Dependencies
 ------------
 
+The following libraries are needed:
+
 - Eigen (http://eigen.tuxfamily.org/)
   On Ubuntu, you can install with: `sudo apt-get install libeigen3-dev`
 
@@ -40,7 +42,8 @@ then you can build the C++ extension with:
     cd krahenbuhl2013/
     make
 
-If Eigen3 is in another directory, edit krahenbuhl2013/setup.py to change the directory.
+If you are on another operating system or `eigen3` is in another directory,
+edit `krahenbuhl2013/setup.py` to change the directory.
 
 
 Running
