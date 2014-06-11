@@ -34,12 +34,12 @@ Dependencies
 - Python packages (newer: packages will likely work, though these are the exact
   versions that I used).
 
-	PIL==1.1.7
-	cython==0.19.2
-	numpy==1.8.0
-	scipy==0.13.2
-	scikit-image==0.9.3
-	scikit-learn==0.14.1
+		PIL==1.1.7
+		cython==0.19.2
+		numpy==1.8.0
+		scipy==0.13.2
+		scikit-image==0.9.3
+		scikit-learn==0.14.1
 
 
 Compile
