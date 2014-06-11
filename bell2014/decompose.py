@@ -33,7 +33,8 @@ if __name__ == '__main__':
             '    ACM Transactions on Graphics (SIGGRAPH 2014).\n'
             '    http://intrinsic.cs.cornell.edu.\n'
             '\n'
-            'The output is rescaled for viewing and encoded as sRGB PNG images.'
+            'The output is rescaled for viewing and encoded as sRGB PNG images'
+            '(unless --linear is specified).'
         )
     )
 
@@ -62,7 +63,7 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '-l', '--linear', action='store_true',
-        help='if specified, assume input is linear, otherwise assume sRGB', required=False)
+        help='if specified, assume input is linear and generate linear output, otherwise assume input is sRGB and generate sRGB output', required=False)
 
     parser.add_argument(
         '-q', '--quiet', action='store_true',
@@ -124,8 +125,8 @@ if __name__ == '__main__':
     r, s, decomposition = solver.solve()
 
     # save output
-    image_util.save(r_filename, r, mask_nz=input.mask_nz, rescale=True)
-    image_util.save(s_filename, s, mask_nz=input.mask_nz, rescale=True)
+    image_util.save(r_filename, r, mask_nz=input.mask_nz, rescale=True, srgb=sRGB)
+    image_util.save(s_filename, s, mask_nz=input.mask_nz, rescale=True, srgb=sRGB)
     if args.show_labels:
         labels_vis = decomposition.get_labels_visualization()
         r_path, r_ext = os.path.splitext(r_filename)
