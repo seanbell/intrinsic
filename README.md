@@ -1,11 +1,13 @@
 Intrinsic Images in the Wild
 ============================
 
-If you find this code useful, please cite:
+This repository contains the decomposition algorithm presented in the paper:
 
-Sean Bell, Kavita Bala, Noah Snavely. "Intrinsic Images in the Wild".
-ACM Transactions on Graphics (SIGGRAPH 2014).
-http://intrinsic.cs.cornell.edu.'
+	Sean Bell, Kavita Bala, Noah Snavely. "Intrinsic Images in the Wild".
+	ACM Transactions on Graphics (SIGGRAPH 2014).
+	http://intrinsic.cs.cornell.edu.'
+
+If you find our code useful, please cite our paper.
 
 
 Dependencies
