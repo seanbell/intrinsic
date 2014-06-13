@@ -110,20 +110,27 @@ Our code was written to be modular and can be embedded in larger projects.
 The basic code for constructing the input and parameters can be found in
 `bell2014/decompose.py` or is listed below:
 
-    input = IntrinsicInput.from_file(
-        image_filename,
-        image_is_srgb=sRGB,
-        mask_filename=mask_filename,
-        judgements_filename=judgements_filename,
-    )
+```python
+from bell2014.solver import IntrinsicSolver
+from bell2014.input import IntrinsicInput
+from bell2014.params import IntrinsicParameters
+from bell2014 import image_util
 
-	params = IntrinsicParameters.from_dict({
-		'param1': ...,
-		'param2': ...,
-	})
+input = IntrinsicInput.from_file(
+	image_filename,
+	image_is_srgb=sRGB,
+	mask_filename=mask_filename,
+	judgements_filename=judgements_filename,
+)
 
-    solver = IntrinsicSolver(input,params)
-    r, s, decomposition = solver.solve()
+params = IntrinsicParameters.from_dict({
+	'param1': ...,
+	'param2': ...,
+})
 
-    image_util.save(r_filename, r, mask_nz=input.mask_nz, rescale=True)
-    image_util.save(s_filename, s, mask_nz=input.mask_nz, rescale=True)
+solver = IntrinsicSolver(input,params)
+r, s, decomposition = solver.solve()
+
+image_util.save(r_filename, r, mask_nz=input.mask_nz, rescale=True)
+image_util.save(s_filename, s, mask_nz=input.mask_nz, rescale=True)
+```
