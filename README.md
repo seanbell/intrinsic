@@ -55,6 +55,12 @@ edit `krahenbuhl2013/setup.py` to change the directory.
 Running
 -------
 
+Basic usage:
+
+    bell2014/decompose.py image.png
+
+All arguments:
+
     usage: decompose.py [-h] [-r <file>] [-s <file>] [-m <file>] [-j <file>]
                         [-p <file>] [-l] [-q] [--show-labels]
                         <file>
