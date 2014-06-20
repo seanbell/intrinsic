@@ -1,19 +1,31 @@
 Intrinsic Images in the Wild
 ============================
 
-This repository contains the decomposition algorithm presented in the paper:
+This repository contains the decomposition algorithm presented in our
+[paper](http://intrinsic.cs.cornell.edu):
 
 	Sean Bell, Kavita Bala, Noah Snavely
 	"Intrinsic Images in the Wild"
 	ACM Transactions on Graphics (SIGGRAPH 2014)
-	http://intrinsic.cs.cornell.edu
 
-as well as a simple Python wrapper to [Krahenbuhl et al 2013]:
+	@article{bell14intrinsic,
+		author = "Sean Bell and Kavita Bala and Noah Snavely",
+		title = "Intrinsic Images in the Wild",
+		journal = "ACM Trans. on Graphics (SIGGRAPH)",
+		volume = "33",
+		number = "4",
+		year = "2014",
+	}
+
+as well as a simple Python wrapper to the C++ dense CRF inference code from
+[Krahenbuhl et al 2013](http://graphics.stanford.edu/projects/drf/):
 
 	Philipp Krähenbühl and Vladlen Koltun
     "Parameter Learning and Convergent Inference for Dense Random Fields"
     International Conference on Machine Learning (ICML) 2013
-    http://graphics.stanford.edu/projects/drf/
+
+It's nice to see how many people are using our code, so please "star" our
+repository on Github.
 
 The dataset is hosted at http://intrinsic.cs.cornell.edu/.
 
